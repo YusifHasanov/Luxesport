@@ -1,0 +1,263 @@
+
+.f_general {
+    width: 100%;
+    background-color: var(--color-background-495057);
+    padding-left: calc((100% - 1340px) / 2);
+    padding-right: calc((100% - 1340px) / 2);
+  }
+  .container{
+      display: flex;
+ width: 100%;
+  }
+  .footer_v1 {
+    width: 100%;
+    padding: 70px 0 57px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .f_top {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .container > div {
+    width: 25%;
+  }
+  
+  .container > div > h4 {
+    color: var(--color-text-FFFFFF);
+  }
+  .container > div > h4::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 55px;
+    margin-top: 17px;
+    background-color: #fff;
+  }
+  
+  .container > div > div > p {
+    color: var(--color-text-D6D6D6);
+    margin-top: 23px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .form_conteiner > h3 {
+    color: var(--color-text-FFFFFF);
+    font-weight: var(--font-700);
+    padding-top: 23px;
+  }
+  
+  .form_group {
+    display: flex;
+  }
+  
+  .input {
+    width: 73%;
+  }
+
+  .btn {
+    border: solid 0;
+    background-color: var(--color-text-FB5B21);
+    color: var(--color-background-FFFFFF);
+    font-weight: var(--font-600);
+    height: calc(2.25rem + 2px);
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sing_in{
+ 
+    font-size: 0.625vw;
+  
+}
+
+  .icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons ul li {
+      margin-left: 20px;
+      margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--color-background-555555);
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icons ul li:hover {
+    box-shadow: inset 0px -40px 0px 0px var(--color-text-FB5B21);
+    -webkit-transition: box-shadow 0.15s ease-in-out;
+    transition: box-shadow 0.4s ease-in-out;
+  }
+  
+  .twitter,
+  .bs_ball,
+  .behance,
+  .instagram {
+    color: var(--color-text-FFFFFF);
+  }
+  
+  .container ul {
+    margin-top: 30px;
+  }
+  
+  .container div ul li {
+    line-height: 24px;
+    color: var(--color-text-D6D6D6);
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: var(--font-400);
+  }
+  
+  .container div ul li :hover {
+    color: var(--color-text-FFFFFF);
+  }
+  .shop_launch > p {
+    font-size: 13px;
+    color: var(--color-text-D6D6D6);
+  }
+  
+  p > Link {
+    font-weight: 400;
+    color: var(--color-text-FFFFFF);
+    text-decoration: none;
+    
+  }
+  
+  .pay {
+    display: flex;
+    justify-content: end;
+  }
+  .f_bottom {
+    border-top: 1px solid var(--color-background-555555);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 15px;
+  }
+
+  .shop_launch{
+      color: var(--color-text-FFFFFF);
+  }
+  
+  @media screen and (max-width: 992px) {
+    
+    
+    .container > div {
+      overflow: hidden;
+    }
+    .container {
+        padding-top: 20px;
+      flex-wrap: wrap;
+    }
+    .container > div:last-child {
+      width: 100%;
+    }
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    form {
+      overflow: hidden;
+      justify-content: center;
+  
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    .input {
+      width: 500px;
+    }
+    .container ul {
+      width: 500px;
+      padding-left: 30%;
+    }
+    .container > div > h4 {
+      padding-left: 80px;
+    }
+  
+    .btn{
+        width: 150px;
+    }
+    .sing_in{
+ 
+      font-size: 13px;
+    
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container > div {
+      width: 100%;
+   
+    }
+ .container {
+    overflow: hidden;
+ }
+    
+    .container > div > h4 {
+      padding-top: 20px;
+    }
+    h3 {
+      text-align: center;
+  
+      font-weight: var(--font-500);
+    }
+  
+    .container > div > h4 {
+      padding-left: 0;
+      text-align: center;
+      font-size: 12px;
+      font-weight: var(--font-500);
+    }
+    .container ul {
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+    .container > div > h4::after {
+      margin-left: 45%;
+      content: "";
+      display: block;
+      height: 1px;
+      width: 55px;
+      margin-top: 17px;
+      background-color: var(--color-background-FFFFFF);
+    }
+  
+    .pay {
+      margin-top: 40px;
+    }
+    .f_bottom {
+      flex-direction: column;
+    }
+    .sing_in{
+ 
+        font-size: 8px;
+      
+    }
+    .btn{
+        width: 150px;
+    }
+
+  }
+  

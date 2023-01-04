@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  text-decoration: none;
+  list-style-type: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+ 
+:root {
+  --font-400: 400;
+  --font-500: 500;
+  --font-600: 600;
+  --font-700: 700;
+  --font-800: 800;
+  --color-background-FFFFFF: #ffffff;
+  --color-background-F6F8FA: #f6f8fa;
+  --color-background-F7F7F7: #f7f7f7;
+  --color-background-F2F2F2: #f2f2f2;
+  --color-background-EEEEEE: #eeeeee;
+  --color-background-83B735: #83b735;
+  --color-background-FB5B21: #fb5b21;
+  --color-background-2294D6: #2294d6;
+  --color-background-DD3333: #dd3333;
+  --color-background-555555: #555555;
+  --color-background-495057: #495057;
+  --color-background-741313: #741313;
+  --color-background-333333: #333333;
+  --color-background-1E1E1E: #1e1e1e;
+  --color-background-1D1D1F99: #1d1d1f99;
+  --color-background-000000: #000000;
+  --color-background-000000C4: #000000c4;
+  --color-background-000000CC: #000000cc;
+  --color-background-e7e7e7:#e7e7e7;
+  --color-text-FFFFFF: #ffffff;
+  --color-text-D6D6D6: #d6d6d6;
+  --color-text-C5C4C4: #c5c4c4;
+  --color-text-A8A8A8: #a8a8a8;
+  --color-text-979797: #979797;
+  --color-text-FB5B21: #fb5b21;
+  --color-text-868686: #868686;
+  --color-text-666666: #666666;
+  --color-text-555555: #555555;
+  --color-text-495057: #495057;
+  --color-text-333333: #333333;
+  --color-text-212529: #212529;
+  --color-text-010101: #010101;
+  --color-text-000000: #000000;
+  --color-text-00000066: #00000066;
+  --color-text-e7e7e7:#e7e7e7;
+  --color-text-bfbfbf:#bfbfbf;
+}
+
+ 

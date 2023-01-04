@@ -1,0 +1,17 @@
+.add_to_card_button{
+    margin-right: 7px;
+    width: 200px;
+    height: 55px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: var(--color-background-000000);
+    font-weight: var(--font-600);
+    color: var(--color-background-FFFFFF);
+    transition: all ease-in-out 0.3s;
+}
+
+
+.add_to_card_button:hover{
+  background-color: var(--color-background-FB5B21);
+
+}
