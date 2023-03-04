@@ -7,7 +7,9 @@
   text-decoration: none;
   list-style-type: none;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after {

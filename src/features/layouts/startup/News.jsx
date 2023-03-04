@@ -13,10 +13,11 @@ import { routing } from "./../../../globalRouting";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectAllNews } from "./../../redux/newsSlice";
-
+import {data } from './../../../consts/consts'
 const News = () => {
   const navigate = useNavigate();
-  const allNews = useSelector(selectAllNews);
+  // const allNews = useSelector(selectAllNews);
+  const allNews = data.news;
   const rendered = allNews.map((item) => {
     return (
       <div className={styles.news_content_blog} key={item.id}>

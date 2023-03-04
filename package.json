@@ -20,7 +20,8 @@
     "react-simple-star-rating": "^5.1.7"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "json-server --watch ./db/db.json --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -14,18 +14,18 @@ import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import SingleShopPageBottom from "./SingleShopPageBottom";
 import Button from "../../../companent/button/Button";
 import Input from "../../../companent/input/Input";
-
+import { data } from "./../../../consts/consts";
 
 const SingleShopPage = () => {
   
   const [selectedSize, setSelectedSize] = useState(1);
   const [selectedStyle, setSelectedStyle] = useState(1);
   const productId = useParams();
-  const singleProduct = useSelector((state) =>
-    selectProductById(state, productId.productId)
-  );
+  // const singleProduct = useSelector((state) =>
+  //   selectProductById(state, productId.productId)
+  // );
 
-
+const singleProduct = data.products.find((item) => item.id === productId.productId);
 
   const sizeChanger = (paramsValue) => setSelectedSize(paramsValue);
   const styleChanger = (paramsValue) => setSelectedStyle(paramsValue);

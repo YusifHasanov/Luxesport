@@ -3,15 +3,16 @@ import styles from "./singlenews.module.css";
 import { useParams } from "react-router-dom";
 import { selectNewsById } from "../../redux/newsSlice";
  import { useSelector } from "react-redux";
+ import {data as newsData} from './../../../consts/consts';
 const SingleNews = () => {
   const [state, setState] = useState({ username: "", email: "", comment: "" });
   const newsId = useParams();
-  const data =useSelector(state=>selectNewsById(state,newsId.newsId));
- 
+  // const data =useSelector(state=>selectNewsById(state,newsId.newsId));
+  const data = newsData.news.find((item) => item.id === newsId.newsId);
   const submitHandler = (e) => {
     e.preventDefault();
   };
-
+console.log(data)
   return (
     <div className={styles.single_news_container}>
       <h2>{data.title}</h2>

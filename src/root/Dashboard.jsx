@@ -8,8 +8,15 @@ import Footer from "./../features/layouts/Footer/Footer";
 import SingleShopPage from "../features/layouts/shop/SingleShopPage";
 import NewsList from "../features/layouts/news/NewsList";
 import Cart from "./../features/layouts/cart/Cart";
-
+import { useLocation } from "react-router-dom";
 const Dashboard = () => {
+  const location = useLocation();
+  //scroll to top on page change
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+
+  }, [location.pathname])
+  
   return (
     <div>
       <Navigation />

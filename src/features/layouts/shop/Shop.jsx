@@ -15,7 +15,7 @@ import { useSelector } from "react-redux";
 import { selectAllProducts } from "./../../redux/productsSlice";
 import ShopItem from "./ShopItem";
 import { selectAllCategories } from "./../../redux/categorySlice";
-
+import { data } from "../../../consts/consts";
 const priceArray = [
   {
     min: 100,
@@ -32,8 +32,10 @@ const priceArray = [
 ];
 
 const Shop = () => {
-  const allProducts = useSelector(selectAllProducts);
-  const allCategories = useSelector(selectAllCategories);
+  // const allProducts = useSelector(selectAllProducts);
+  // const allCategories = useSelector(selectAllCategories);
+  const allProducts = data.products;
+  const allCategories = data.categories;
   const [scrollData, setScrollData] = useState(8);
   const [select, setSelect] = useState("manual");
   const { isOpen: isFilterOpen, onToggle: onFilterToggle } = useDisclosure();
